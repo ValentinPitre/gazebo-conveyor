@@ -77,7 +77,7 @@ void ConveyorBeltPlugin::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
   // this->limit = this->joint->UpperLimit(0) - 0.6;
 
   // Belt has to move 40% of the limit to be respawned
-  this->limit = this->joint->UpperLimit(0) * 0.4;
+  this->limit = this->joint->UpperLimit(0) * 0.1;
 
   // Initialize Gazebo transport
   this->gzNode = transport::NodePtr(new transport::Node());
